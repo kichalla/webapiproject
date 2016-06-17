@@ -37,7 +37,7 @@ namespace WebApplication1
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
-            app.UseMvc();
+            app.UseMvcWithDefaultRoute();
         }
     }
 }
